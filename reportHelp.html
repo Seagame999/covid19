@@ -90,25 +90,36 @@
                     alt="">&nbsp;ขอความช่วยเหลือ</h1>
         </div>
         <br>
+        <div class="row">
+            <div class="col-6">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/index.html">หน้าแรก</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">ขอความช่วยเหลือ</li>
+                    </ol>
+                  </nav>   
+            </div>
+        </div>
+        <br>
         <div class="card">
             <div class="card-body">
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
-                            <label class="h5">ชื่อ</label>
-                            <input type="text" class="form-control">
+                            <label class="h5">ชื่อ<a class="text-danger">*</a></label>
+                            <input type="text" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label class="h5">นามสกุล</label>
-                            <input type="text" class="form-control">
+                            <label class="h5">นามสกุล<a class="text-danger">*</a></label>
+                            <input type="text" class="form-control" required>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6">
                         <div class="form-group">
-                            <label class="h5">เพศ</label>
-                            <select class="form-control">
+                            <label class="h5">เพศ<a class="text-danger">*</a></label>
+                            <select class="form-control" required>
                                 <option>ชาย</option>
                                 <option>หญิง</option>
                             </select>
@@ -124,16 +135,16 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
-                            <label class="h5">ที่อยู่</label>
-                            <textarea class="form-control" rows="3"></textarea>
+                            <label class="h5">ที่อยู่<a class="text-danger">*</a></label>
+                            <textarea class="form-control" rows="3" required></textarea>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
-                            <label class="h5">เบอร์โทร</label>
-                            <input type="text" class="form-control" placeholder="08X-XXXXXXX">
+                            <label class="h5">เบอร์โทร<a class="text-danger">*</a></label>
+                            <input type="text" class="form-control" placeholder="08X-XXXXXXX" required>
                         </div>
                     </div>
                 </div>
@@ -148,8 +159,8 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
-                            <label class="h5">คำอธิบายความเสี่ยง</label>
-                            <textarea class="form-control" rows="3"></textarea>
+                            <label class="h5">คำอธิบายความเสี่ยง<a class="text-danger">*</a></label>
+                            <textarea class="form-control" rows="3" required></textarea>
                         </div>
                     </div>
                 </div>
@@ -161,7 +172,7 @@
                     </div>
                 </div>
                 <center>
-                    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">
+                    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal" onclick="ClearInput()">
                         บันทึก
                       </button>
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
