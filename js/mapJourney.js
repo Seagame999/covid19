@@ -19,7 +19,7 @@ google.charts.load('current', {
       ['France', 1],
     ]);
 
-    var options = {};
+    var options = {minValue: 0,  colors: ['#FFFFCC', '#FF0000']};
 
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 

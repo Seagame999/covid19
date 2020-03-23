@@ -22,7 +22,7 @@ google.charts.load('current', {
       ['Australia', 150]
     ]);
 
-    var options = {};
+    var options = {minValue: 0,  colors: ['#F0939C', '#FF0000']};
 
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 
